@@ -1,0 +1,4 @@
+cameras:
+  - visionpro:
+      type: visionpro
+      avp_ip: "localhost"

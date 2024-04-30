@@ -1,0 +1,9 @@
+robot_cfg:
+  dt: 0.05
+  urdf_path: assembly/xarm7_ability/xarm7_ability_left_hand.urdf
+
+  kinematics:
+    ik_damping: 1e-5
+    eps: 1e-3
+    ee_link: ee_link
+
