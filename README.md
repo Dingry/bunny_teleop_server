@@ -20,7 +20,7 @@
     .
     <a href="https://xiaolonw.github.io/"><strong>Xiaolong Wang</strong></a>
   </p>
-  <h3 align="center"><a href="https://dingry.github.io/projects/bunny_visionpro.html">Project Page</a> | <a href="https://dingry.github.io/BunnyVisionPro/">Documentation</a> </h3>
+  <h3 align="center"> <a href="https://github.com/Dingry/BunnyVisionPro">Main Repo</a> | <a href="https://dingry.github.io/projects/bunny_visionpro.html">Project Page</a> | <a href="https://dingry.github.io/BunnyVisionPro/">Documentation</a> </h3>
   <div align="center"></div>
 </p>
 
@@ -28,14 +28,6 @@ This repository contains the server code for the Bunny-VisionPro project. For th
 
 ## :wrench: Installation and Usage
 Please refer to the [documentation](https://dingry.github.io/BunnyVisionPro/) for detailed installation and usage instructions.
-
-## :tada: News
-- [2024/05/06] :fire: Initial release with basic usage of bimanual teleoperation with Vision Pro. Check out the [documentation](https://dingry.github.io/BunnyVisionPro/).
-  
-
-## :white_check_mark: TODO
-- [ ] 
-
 
 ## :rabbit: Citation
 ```
