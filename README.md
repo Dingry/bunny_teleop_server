@@ -20,7 +20,7 @@
     .
     <a href="https://xiaolonw.github.io/"><strong>Xiaolong Wang</strong></a>
   </p>
-  <h3 align="center"><a href="">Project Page</a> | <a href="">Documentation</a> </h3>
+  <h3 align="center"><a href="https://dingry.github.io/projects/bunny_visionpro.html">Project Page</a> | <a href="https://dingry.github.io/BunnyVisionPro/">Documentation</a> </h3>
   <div align="center"></div>
 </p>
 
