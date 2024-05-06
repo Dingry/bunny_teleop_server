@@ -4,7 +4,7 @@ from typing import Optional, Dict, Union
 
 import yaml
 
-from dvp_teleop_server.control.base import BaseMotionControl
+from bunny_teleop_server.control.base import BaseMotionControl
 
 
 @dataclass
@@ -66,7 +66,7 @@ class MotionControlConfig:
     def build(self, device="cuda:0") -> BaseMotionControl:
 
         if self.type == "pinocchio":
-            from dvp_teleop_server.control.pinocchio_motion_control import (
+            from bunny_teleop_server.control.pinocchio_motion_control import (
                 PinocchioMotionControl,
             )
 

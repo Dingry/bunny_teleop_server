@@ -2,7 +2,7 @@ import numpy as np
 from pytransform3d import transformations as pt
 from sim_web_visualizer.base_visualizer_client import MeshCatVisualizerBase
 
-from dvp_teleop_server.communication.visualizer_base import TeleopVisualizerBase
+from bunny_teleop_server.communication.visualizer_base import TeleopVisualizerBase
 
 
 class TeleopWebVisualizer(TeleopVisualizerBase):

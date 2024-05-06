@@ -4,7 +4,7 @@ from typing import Tuple
 
 import numpy as np
 import rclpy
-from dvp_teleop.init_config import BimanualAlignmentMode
+from bunny_teleop.init_config import BimanualAlignmentMode
 from geometry_msgs.msg import Pose
 from hand_msgs.msg import BimanualHandDetection
 from pytransform3d import rotations
@@ -12,7 +12,7 @@ from rclpy.callback_groups import MutuallyExclusiveCallbackGroup
 from rclpy.executors import MultiThreadedExecutor
 from rclpy.node import Node
 
-from dvp_teleop_server.utils.robot_utils import project_average_rotation
+from bunny_teleop_server.utils.robot_utils import project_average_rotation
 
 
 class BimanualMonitorNode(Node):

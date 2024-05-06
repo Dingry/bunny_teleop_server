@@ -6,17 +6,17 @@ from typing import Optional, Tuple
 
 import numpy as np
 from dex_retargeting.seq_retarget import SeqRetargeting
-from dvp_teleop.bimanual_teleop_server import TeleopServer
-from dvp_teleop.init_config import InitializationConfig, BimanualAlignmentMode
+from bunny_teleop.bimanual_teleop_server import TeleopServer
+from bunny_teleop.init_config import InitializationConfig, BimanualAlignmentMode
 from hand_msgs.msg import BimanualHandDetection
 from pytransform3d import rotations
 from pytransform3d import transformations as pt
 from rclpy.callback_groups import MutuallyExclusiveCallbackGroup, ReentrantCallbackGroup
 
-from dvp_teleop_server.communication.visualizer_base import TeleopVisualizerBase
-from dvp_teleop_server.control.base import BaseMotionControl
-from dvp_teleop_server.nodes.bimanual_hand_monitor_node import BimanualMonitorNode
-from dvp_teleop_server.utils.robot_utils import LPFilter, LPRotationFilter
+from bunny_teleop_server.communication.visualizer_base import TeleopVisualizerBase
+from bunny_teleop_server.control.base import BaseMotionControl
+from bunny_teleop_server.nodes.bimanual_hand_monitor_node import BimanualMonitorNode
+from bunny_teleop_server.utils.robot_utils import LPFilter, LPRotationFilter
 
 
 class BimanualRobotTeleopNode(BimanualMonitorNode):

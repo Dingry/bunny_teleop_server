@@ -4,7 +4,7 @@ from pathlib import Path
 from setuptools import setup, find_packages
 
 _here = Path(__file__).resolve().parent
-name = "dvp_teleop_server"
+name = "bunny_teleop_server"
 
 # Reference: https://github.com/kevinzakka/mjc_viewer/blob/main/setup.py
 with open(_here / name / "__init__.py") as f:
@@ -23,7 +23,7 @@ core_requirements = [
     # Our own packages
     "dex_retargeting",
     "sim_web_visualizer",
-    # "dvp_teleop",
+    "bunny_teleop",
 ]
 
 classifiers = [
@@ -45,10 +45,10 @@ classifiers = [
 
 def setup_package():
     # Meta information of the project
-    author = "DexVisionPro"
+    author = "BunnyVisionPro"
     author_email = ""
     description = "Teleoperation server for bimanual robot arms + hands."
-    url = ""
+    url = "https://github.com/Dingry/bunny_teleop_server"
     with open(_here / "README.md", "r") as file:
         readme = file.read()
 
@@ -76,8 +76,8 @@ def setup_package():
         classifiers=classifiers,
         entry_points={
             'console_scripts': [
-                'run_robot_server = dvp_teleop_server.main.run_robot_server:main',
-                'run_vision_server = dvp_teleop_server.main.run_vision_server:main',
+                'run_robot_server = bunny_teleop_server.main.run_robot_server:main',
+                'run_vision_server = bunny_teleop_server.main.run_vision_server:main',
             ],
         },
     )

@@ -13,12 +13,12 @@ from pytransform3d import rotations
 from rclpy.node import Node
 from visualization_msgs.msg import MarkerArray
 
-from dvp_teleop_server.utils.viz_utils import (
+from bunny_teleop_server.utils.viz_utils import (
     draw_mark_array_points,
     draw_mark_array_lines,
     HAND_CONNECTIONS,
 )
-from dvp_teleop_server.utils.robot_utils import OPERATOR2AVP_RIGHT, OPERATOR2AVP_LEFT
+from bunny_teleop_server.utils.robot_utils import OPERATOR2AVP_RIGHT, OPERATOR2AVP_LEFT
 
 
 def three_mat_mul(left_rot: np.ndarray, mat: np.ndarray, right_rot: np.ndarray):

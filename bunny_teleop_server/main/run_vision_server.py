@@ -4,7 +4,7 @@ from pathlib import Path
 from launch import LaunchDescription, LaunchService
 from launch_ros.actions import Node
 
-from dvp_teleop_server.utils.camera_config import get_camera_config, CameraConfig
+from bunny_teleop_server.utils.camera_config import get_camera_config, CameraConfig
 
 
 def parse_args():

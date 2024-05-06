@@ -6,7 +6,7 @@ import numpy as np
 import pinocchio as pin
 import yaml
 
-from dvp_teleop_server.control.base import BaseMotionControl
+from bunny_teleop_server.control.base import BaseMotionControl
 
 
 class PinocchioMotionControl(BaseMotionControl):

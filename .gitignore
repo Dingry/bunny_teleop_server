@@ -12,5 +12,5 @@ imgui.ini
 .DS_Store
 /.idea
 /log
-/dvp_teleop.egg-info/
-/dvp_teleop_server.egg-info/
+/bunny_teleop.egg-info/
+/bunny_teleop_server.egg-info/

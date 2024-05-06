@@ -6,18 +6,18 @@ import yaml
 from dex_retargeting.retargeting_config import RetargetingConfig
 from sim_web_visualizer.base_visualizer_client import MeshCatVisualizerBase
 
-# from dvp_teleop_server.communication.vision_pro_visualizer import (
+# from bunny_teleop.communication.vision_pro_visualizer import (
 #     setup_vision_pro_visualizer,
 # )
-from dvp_teleop_server.communication.web_visualizer import TeleopWebVisualizer
-from dvp_teleop_server.nodes.bimanual_hand_monitor_node import run_hand_node
-from dvp_teleop_server.nodes.bimanual_teleop_server_node import BimanualRobotTeleopNode
-from dvp_teleop_server.utils.camera_config import get_camera_config
-from dvp_teleop_server.utils.comminication_config import (
+from bunny_teleop_server.communication.web_visualizer import TeleopWebVisualizer
+from bunny_teleop_server.nodes.bimanual_hand_monitor_node import run_hand_node
+from bunny_teleop_server.nodes.bimanual_teleop_server_node import BimanualRobotTeleopNode
+from bunny_teleop_server.utils.camera_config import get_camera_config
+from bunny_teleop_server.utils.comminication_config import (
     CommunicationConfig,
     get_communication_config,
 )
-from dvp_teleop_server.utils.motion_control_config import MotionControlConfig
+from bunny_teleop_server.utils.motion_control_config import MotionControlConfig
 
 
 def parse_args():
