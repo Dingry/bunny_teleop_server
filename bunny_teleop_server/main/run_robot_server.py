@@ -125,6 +125,9 @@ def main():
                 f"Two urdf path is required in the communication path to visualize the robot"
             )
         if comm_cfg.viz_type == "sim_web_visualizer":
+            from meshcat.servers.zmqserver import start_zmq_server_as_subprocess
+            start_zmq_server_as_subprocess()
+
             viz = MeshCatVisualizerBase(port=comm_cfg.viz_port, host=comm_cfg.viz_host)
             left_robot_viz = TeleopWebVisualizer(
                 viz,
