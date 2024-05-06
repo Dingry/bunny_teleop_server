@@ -2,7 +2,7 @@
 
 <p align="center">
 
-  <h1 align="center"><img src="docs/assets/logo/bunny.png" width="80">Bunny-VisionPro: Bimanual Dexterous Teleoperation with Real-Time Retargeting using Vision Pro</h1>
+  <h1 align="center"><img src="assets/images/logo/bunny.png" width="80">Bunny-VisionPro: Bimanual Dexterous Teleoperation with Real-Time Retargeting using Vision Pro</h1>
   <p align="center">
     <a href="https://dingry.github.io/"><strong>Runyu Ding</strong></a>
     ·
@@ -24,22 +24,20 @@
   <div align="center"></div>
 </p>
 
-## Installation and Usage
+This repository contains the server code for the Bunny-VisionPro project. For the client code, please refer to [BunnyVisionPro](https://github.com/Dingry/BunnyVisionPro).
+
+## :wrench: Installation and Usage
 Please refer to the [documentation](https://dingry.github.io/BunnyVisionPro/) for detailed installation and usage instructions.
 
-## News
-- [2024/05/06] Initial release with basic usage of bimanual teleoperation with Vision Pro. Check out the [documentation](https://dingry.github.io/BunnyVisionPro/).
+## :tada: News
+- [2024/05/06] :fire: Initial release with basic usage of bimanual teleoperation with Vision Pro. Check out the [documentation](https://dingry.github.io/BunnyVisionPro/).
   
 
-## TODO
+## :white_check_mark: TODO
 - [ ] 
 
-## Acknowledgement
-Our code is built upon [VisionProTeleop](https://github.com/Improbable-AI/VisionProTeleop), [dex-retargeting](https://github.com/dexsuite/dex-retargeting), [sim-web-visualizer](https://github.com/NVlabs/sim-web-visualizer). We thank all these authors for their nicely open sourced code and their great contributions to the community.
 
-
-
-## Citation
+## :rabbit: Citation
 ```
 @article{bunny-visionpro,
   author  = {Runyu Ding, Yuzhe Qin, Jiyue Zhu, Chengzhe Jia, Shiqi Yang, Ruihan Yang, Xiaojuan Qi, and Xiaolong Wang},
