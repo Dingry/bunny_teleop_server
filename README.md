@@ -26,6 +26,8 @@
 
 This repository contains the server code for the Bunny-VisionPro project. For the client code, please refer to [BunnyVisionPro](https://github.com/Dingry/BunnyVisionPro).
 
+**If you encounter any problems using the server code, please raise issues in the client code repo.**
+
 ## :wrench: Installation and Usage
 Please refer to the [documentation](https://dingry.github.io/BunnyVisionPro/) for detailed installation and usage instructions.
 
