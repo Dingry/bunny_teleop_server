@@ -82,7 +82,7 @@ def main():
 
     # Set retargeting directory
     root_dir = kinematics_path.parent.parent.parent.resolve().absolute()
-    urdf_dir = (root_dir / "assets/urdf").resolve()
+    urdf_dir = (root_dir / "assets/robots").resolve()
     RetargetingConfig.set_default_urdf_dir(urdf_dir)
     MotionControlConfig.set_default_robot_config_dir(
         (root_dir / "configs/robot_config").resolve()
@@ -120,13 +120,14 @@ def main():
     # Parse communication config
     if comm_config is not None:
         comm_cfg = get_communication_config(comm_config)
+        comm_cfg.viz_urdf_paths = [str(mc.urdf_path) for mc in motion_controls]
         if len(comm_cfg.viz_urdf_paths) != 2:
             raise ValueError(
                 f"Two urdf path is required in the communication path to visualize the robot"
             )
         if comm_cfg.viz_type == "sim_web_visualizer":
             from meshcat.servers.zmqserver import start_zmq_server_as_subprocess
-            start_zmq_server_as_subprocess()
+            start_zmq_server_as_subprocess()     
 
             viz = MeshCatVisualizerBase(port=comm_cfg.viz_port, host=comm_cfg.viz_host)
             left_robot_viz = TeleopWebVisualizer(

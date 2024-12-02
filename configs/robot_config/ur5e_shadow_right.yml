@@ -1,0 +1,8 @@
+robot_cfg:
+  dt: 0.05
+  urdf_path: assembly/ur5e_shadow/ur5e_shadow_right_hand_glb.urdf
+
+  kinematics:
+    ik_damping: 1e-5
+    eps: 1e-3
+    ee_link: ee_link

@@ -46,6 +46,6 @@ class BaseMotionControl:
     def get_urdf_absolute_path(cfg: dict, robot_config_path: Path) -> Path:
         urdf_path = Path(cfg["urdf_path"])
         if not urdf_path.is_absolute():
-            base_path = robot_config_path.parent.parent.parent / "assets/urdf"
+            base_path = robot_config_path.parent.parent.parent / "assets/robots"
             urdf_path = (base_path / urdf_path).resolve().absolute()
         return urdf_path

@@ -36,6 +36,7 @@ class PinocchioMotionControl(BaseMotionControl):
 
         # Build robot
         urdf_path = self.get_urdf_absolute_path(cfg, robot_config_path)
+        self.urdf_path = urdf_path
         self.model: pin.Model = pin.buildModelFromUrdf(str(urdf_path))
         self.data: pin.Data = self.model.createData()
         frame_mapping: Dict[str, int] = {}

@@ -1,0 +1,71 @@
+left:
+  retargeting:
+    type: vector
+
+    urdf_path: hands/shadow_hand/shadow_hand_left.urdf
+
+    # Wrist link name of the hand in URDF, note: this frame should be consistent with operator frame convention
+    wrist_link_name: "ee_link"
+
+    # Target refers to the retargeting target, which is the robot hand
+    target_joint_names: null
+    target_origin_link_names: [ "palm", "palm", "palm", "palm", "palm", "palm", "palm", "palm", "palm", "palm" ]
+    target_task_link_names: [ "thtip",  "fftip", "mftip", "rftip", "lftip", "thmiddle", "ffmiddle", "mfmiddle", "rfmiddle", "lfmiddle" ]
+    scaling_factor: 1.0
+
+    # Source refers to the retargeting input, which usually corresponds to the human hand
+    # The joint indices of human hand joint which corresponds to each link in the target_link_names
+    target_link_human_indices: [ [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 4, 8, 12, 16, 20, 2, 6, 10, 14, 18 ] ]
+
+    # Low pass filter for hand
+    # A smaller alpha means stronger filtering, i.e. more smooth but also larger latency
+    low_pass_alpha: 0.4
+
+  control:
+    type: pinocchio
+
+    robot_name: ur5e_shadow_left
+
+    # Config path with more details about the robot and its kinematics
+    robot_config_path: ur5e_shadow_left.yml
+
+    # Low pass filter for arm
+    # A smaller alpha means stronger filtering, i.e. more smooth but also larger latency
+    low_pass_alpha: 0.05
+
+    # Set True if you do not want to control the orientation of hand
+    disable_orientation_control: False
+
+    # Set to a smaller value for first trial before you are familiar with the system
+    # In most cases, it should be smaller than 1
+    motion_scaling_factor: 1.0
+
+right:
+  retargeting:
+    type: vector
+
+    urdf_path: hands/shadow_hand/shadow_hand_right.urdf 
+
+    wrist_link_name: "ee_link"
+
+    target_joint_names: null
+    target_origin_link_names: [ "palm", "palm", "palm", "palm", "palm", "palm", "palm", "palm", "palm", "palm" ]
+    target_task_link_names: [ "thtip",  "fftip", "mftip", "rftip", "lftip", "thmiddle", "ffmiddle", "mfmiddle", "rfmiddle", "lfmiddle" ]
+    scaling_factor: 1.0
+
+    target_link_human_indices: [ [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 4, 8, 12, 16, 20, 2, 6, 10, 14, 18 ] ]
+
+    low_pass_alpha: 0.4
+
+  control:
+    type: pinocchio
+
+    robot_name: ur5e_shadow_right
+
+    robot_config_path: ur5e_shadow_right.yml
+
+    low_pass_alpha: 0.05
+
+    disable_orientation_control: False
+
+    motion_scaling_factor: 1.0
